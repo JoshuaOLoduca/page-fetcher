@@ -13,5 +13,9 @@ const writeFile = (dest, content) => {
 }
 
 request(url, (error, response, body) => {
+  if (error !== null) {
+    console.log(url,': Is not a valid URL');
+    return;
+  }
   writeFile(dest, body);
 });
