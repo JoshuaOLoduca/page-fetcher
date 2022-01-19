@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JoshuaOLoduca/page-fetcher/issues"
   },
-  "homepage": "https://github.com/JoshuaOLoduca/page-fetcher#readme"
+  "homepage": "https://github.com/JoshuaOLoduca/page-fetcher#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
