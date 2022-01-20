@@ -14,6 +14,7 @@ const writeFile = (dest, content) => {
       console.error(err)
       return;
     }
+    console.log(`Wrote ${content.length} bytes to ${dest}`)
     process.exit(1)
   });
 }
