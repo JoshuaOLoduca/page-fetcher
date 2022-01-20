@@ -20,7 +20,7 @@ const writeFile = (dest, content) => {
 
 const checkIfFileExists = (dir, content) => {
   if (fs.existsSync(dir)) {
-    // console.log('File exists! Do you want to overwrite?\n')
+
     rl.question('File exists! Do you want to overwrite? [Y/N]\n', answer => {
       if (answer !== 'n' && answer !== 'y') checkIfFileExists(dir, content);
 
